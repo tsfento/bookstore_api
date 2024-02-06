@@ -6,7 +6,7 @@ RSpec.describe 'Authors', type: :request do
 
     before { get '/authors'}
 
-    it 'returns a successfule response' do
+    it 'returns a successful response' do
       expect(response).to be_successful
     end
 
@@ -20,7 +20,7 @@ RSpec.describe 'Authors', type: :request do
 
     before { get "/authors/#{author.id}" }
 
-    it 'returns a successfule response' do
+    it 'returns a successful response' do
       expect(response).to be_successful
     end
 
